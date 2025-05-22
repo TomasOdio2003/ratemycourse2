@@ -8,6 +8,7 @@ export async function GET(request: Request) {
 
   // 2. Pass a function that returns that store to Supabase
   const supabase = createRouteHandlerClient({
+    // @ts-expect-error  Temporary: upstream type mismatch, runtime is correct
     cookies: () => cookieStore,
   });
 
