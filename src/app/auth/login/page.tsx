@@ -4,6 +4,7 @@ import { supabase } from "@/lib/supabaseClient";
 import { useRouter } from "next/navigation";
 import { FaGoogle } from "react-icons/fa";
 export default function LoginPage() {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
   const router = useRouter();
 
   const handleGoogle = async () => {
